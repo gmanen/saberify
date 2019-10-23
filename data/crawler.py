@@ -7,12 +7,12 @@ import sys
 
 
 def get_data_dir():
-    return os.path.join(os.path.dirname(os.path.abspath(__file__)), 'beatsaver')
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bsaber')
 
 
-def load(nb_pages: int = 1):
+def load(nb_pages: int = 1, offset: int = 0):
     loaded = 0
-    page = 1
+    page = offset + 1
 
     while (loaded < nb_pages or nb_pages == 0) and page is not None:
         page = load_page(page)
