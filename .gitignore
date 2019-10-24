@@ -57,3 +57,4 @@ venv.bak/
 
 /data/bsaber/*
 !/data/bsaber/.gitignore
+/data/*.dat
