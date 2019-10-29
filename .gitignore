@@ -58,3 +58,4 @@ venv.bak/
 /data/bsaber/*
 !/data/bsaber/.gitignore
 /data/*.dat
+data/fma_small

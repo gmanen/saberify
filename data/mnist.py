@@ -5,6 +5,7 @@ from keras.layers import Dense, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 from keras.models import Sequential
 import os
+import sys
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 batch_size = 128
@@ -14,6 +15,9 @@ epochs = 1
 img_x, img_y = 28, 28
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
+
+print(y_train)
+sys.exit()
 
 x_train = x_train.reshape(x_train.shape[0], img_x, img_y, 1)
 x_test = x_test.reshape(x_test.shape[0], img_x, img_y, 1)
